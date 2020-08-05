@@ -8,7 +8,7 @@ pipeline {
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
             }
         }
-    }
+   
     
     
         stage('Test') {
@@ -32,5 +32,5 @@ pipeline {
                 sh 'make publish'
             }
         }
-    
+     }
 }
